@@ -16,7 +16,7 @@
             style="@style/Widget.MaterialComponents.Toolbar.Primary"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            app:title="@string/students"
+            app:title="@string/books"
             android:id="@+id/material_toolbar"
             app:titleCentered="true"
             app:navigationIcon="@drawable/menu"

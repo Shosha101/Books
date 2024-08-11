@@ -17,34 +17,40 @@
         android:layout_height="match_parent"
         tools:openDrawer="start">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <include layout="@layout/layout_toolbar"
-            android:id="@+id/toolbar"></include>
-
-        <androidx.recyclerview.widget.RecyclerView
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:id="@+id/rv_users"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/toolbar"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"></androidx.recyclerview.widget.RecyclerView>
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/layout_toolbar"></include>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_users"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+            </androidx.recyclerview.widget.RecyclerView>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
         <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationView"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            app:menu="@menu/drawer_menu"
-            app:headerLayout="@layout/header_layout"
             android:layout_gravity="start"
-            app:itemIconTint="@color/purple"
-            android:id="@+id/navigationView">
+            app:headerLayout="@layout/header_layout"
+            app:itemIconTint="@color/green"
+            app:menu="@menu/drawer_menu">
         </com.google.android.material.navigation.NavigationView>
+
+
+
 
     </androidx.drawerlayout.widget.DrawerLayout>
 

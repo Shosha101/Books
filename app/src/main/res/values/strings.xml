@@ -10,9 +10,13 @@
     <string name="home">Home</string>
     <string name="gallery">Gallery</string>
     <string name="slideshow">Slideshow</string>
-    <string name="my_name">Esraa Fathy</string>
-    <string name="my_email">esraa.fathy225@gmail.com</string>
-    <string name="home_clicked">Home Clicked</string>
-    <string name="gallery_clicked">Gallery Clicked</string>
-    <string name="slideshow_clicked">Slideshow Clicked</string>
+    <string name="my_name">Ahmed Shosha</string>
+    <string name="my_email">ahmed.shosha883@gmail.com</string>
+    <string name="review_clicked">Review Clicked</string>
+    <string name="favorite_clicked">Favorite Clicked</string>
+    <string name="books">Books</string>
+    <string name="wantRead">Want to read</string>
+    <string name="notification">notification</string>
+    <string name="reviews">Reviews</string>
+    <string name="favorite">Favorite</string>
 </resources>

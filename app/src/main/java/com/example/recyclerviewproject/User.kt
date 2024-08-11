@@ -1,3 +1,3 @@
-package com.example.myapplication
+package com.example.recyclerviewproject
 
-data class User(val name : String , val email : String)
+data class User(val name: String, val email: String, val imageResId: Int)

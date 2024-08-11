@@ -1,14 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-<item android:id="@+id/home"
-    android:title="@string/home"
-    android:icon="@drawable/home"></item>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
 
-    <item android:id="@+id/gallery"
-        android:title="@string/gallery"
-        android:icon="@drawable/gallery"></item>
+    <group
+        android:id="@+id/id_group1">
 
-    <item android:id="@+id/slideshow"
-        android:title="@string/slideshow"
-        android:icon="@drawable/slide_show"></item>
+        <item
+            android:id="@+id/id_reviews"
+            android:icon="@drawable/star"
+            android:title="@string/reviews" />
+
+        <item
+            android:id="@+id/id_favorite"
+            android:icon="@drawable/favorite"
+            android:title="@string/favorite" />
+
+        <item
+            android:id="@+id/id_search"
+            android:icon="@drawable/search"
+            android:title="@string/search" />
+    </group>
+
+
+
+    <group
+        android:id="@+id/id_group2">
+        <item
+            android:id="@+id/id_user"
+            android:icon="@drawable/user"
+            android:title="@string/profile" />
+
+        <item
+            android:id="@+id/id_settings"
+            android:icon="@drawable/settings"
+            android:title="@string/settings" />
+    </group>
+
 </menu>
